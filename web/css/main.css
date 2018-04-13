@@ -1,0 +1,131 @@
+.navbar{
+    background-color: #8bc9e3;
+    margin-bottom: 0px;
+}
+.navbar-default .navbar-brand:hover{
+    color: white;
+    text-decoration: underline;
+}
+.panel{
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 25px;
+}
+.navbar-default .navbar-brand{
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.navbar-default .navbar-nav > li > a{
+    color: white;
+    font-size: 20px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+footer{
+    background-color: #8bc9e3;
+    height: 50px;
+}
+
+.col-sm-6{
+    background-color:#edfbff;
+}
+.container-fluid{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 1px solid green;
+}
+#navbarr{
+    border: none;
+    margin: 0;
+}
+.reclama h3{
+    color: #0000bf;
+}
+.reclama:hover>.price{
+    color:red;
+    font-size: 20px;
+}
+.skidka{
+    border-right: 1px solid green;
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
+    margin-top: 0;
+}
+.reclama + .skidka{
+    display: none;
+}
+.kupon{
+    display: none;
+}
+.reclama:hover + .skidka{
+    display: block;
+}
+.reclama:hover>.kupon{
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.more{
+    background-color: #a0d3e8;
+    margin-bottom: 10px;
+}
+.kup{
+    color: red;
+}
+
+img {
+    height: 40%;
+    width: 40%;
+}
+
+.pagination{
+    position: center;
+}

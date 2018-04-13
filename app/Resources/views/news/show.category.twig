@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ category_ru }}</h1>
+
+    <div class="row text-center">
+    <div class="col-sm-4">
+        <div class="thumbnail">
+            {#<h3>{{ category }}</h3>#}
+            <ul>
+                {% for new in news %}
+
+                    <a href="/{{ category }}/{{ new.id }}">{{ new.title }} {{ new.id }}</a><br>
+
+                {% endfor %}
+
+
+            </ul>
+            {#<a href='/{{ category }}' class='btn' role='button' >Больше новостей</a>#}
+        </div>
+    </div>
+    </div>
+
+
+{% block pagination %}
+    {#<nav aria-label="Page navigation example">#}
+        {#<ul class="pagination">#}
+            {#<li class="page-item"><a class="page-link" href="#">Previous</a></li>#}
+            {#<li class="page-item"><a class="page-link" href="#">1</a></li>#}
+            {#<li class="page-item"><a class="page-link" href="#">...</a></li>#}
+            {#<li class="page-item"><a class="page-link" href="#">3</a></li>#}
+            {#<li class="page-item"><a class="page-link" href="/{{category}}/page{{ numpages }}">{{ numpages }}</a></li>#}
+        {#</ul>#}
+    {#</nav>#}
+
+{% endblock %}
+
+{% endblock %}

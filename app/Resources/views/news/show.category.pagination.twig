@@ -1,0 +1,22 @@
+{% extends 'news/show.category.twig' %}
+
+
+{%block pagination  %}
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="/{{ category }}/page1">1</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="showpages">...</a></li>
+
+        <div id="pageshide" style="display: none">
+        {% for i in 2..numpages-1 %}
+            <li class="page-item"><a class="page-link" href="/{{ category }}/page{{ i }}">{{ i }}</a></li>
+
+        {% endfor %}
+        </div>
+
+
+        <li class="page-item"><a class="page-link" href="/{{category}}/page{{ numpages }}">{{ numpages }}</a></li>
+    </ul>
+</nav>
+
+{% endblock %}

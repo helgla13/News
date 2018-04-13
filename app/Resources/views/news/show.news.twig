@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1> {{ news.title }} {{ news.id }}</h1>
+
+    {{ news.createdat |date }} <br>
+    <img src="{{ news.pics }}"><br>
+
+    {{ news.description }}
+
+    <div>
+        <p>Читают:</p>
+        <p>Всего прочли:</p>
+    </div>
+
+    <div>
+        <span>Теги:</span>
+        <a href="#">{{ news.tags }}</a>
+    </div>
+
+    <br>
+
+    <div>
+        <h4>Комментарии</h4>
+        <div class="form-group">
+            <label for="comment">Добавьте комментарий:</label>
+            <textarea class="form-control" rows="5" id="comment" style="width: 300px"></textarea>
+            <button>Добавить</button>
+        </div>
+        <hr>
+        <div>
+            <a href="#">Имя пользователя</a>
+            <span>дата</span>
+            <br>
+            <p>
+                Комментарий комментарий комментарий.........
+            </p>
+            <button><span class="glyphicon glyphicon-thumbs-up"></span></button>
+            <button><span class="glyphicon glyphicon-thumbs-down"></span></button>
+        </div>
+        <hr>
+        <div>
+            <a href="#">Имя пользователя</a>
+            <span>дата</span>
+            <br>
+            <p>
+                Комментарий комментарий комментарий.........
+            </p>
+            <button><span class="glyphicon glyphicon-thumbs-up"></span></button>
+            <button><span class="glyphicon glyphicon-thumbs-down"></span></button>
+        </div>
+        <hr>
+    </div>
+
+{% endblock %}
+
